@@ -16,10 +16,10 @@ class HouseInfo:
                 field_data.append(record[field])
         return field_data
 
-    def get_data_by_date(self, field, rec_date=datetime.today().strftime('%Y/%m/%d')):
+    def get_data_by_date(self, field, rec_date=date.today()):
         field_data = []
         for record in self.data:
-            if date == rec_date:
+            if date == rec_date.strftime("%m/%d/%y"):
                 field_data.append(record.field)
         return field_data
 
