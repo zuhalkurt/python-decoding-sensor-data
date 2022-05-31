@@ -48,3 +48,4 @@ print("House Humidity sensor records for date: {} = {}".format( test_date.strfti
 print("\tAverrage: {} humidity".format(mean(recs)))
 
 # Module 5 code here:
+
