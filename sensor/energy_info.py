@@ -6,7 +6,7 @@ class EnergyData(HouseInfo):
 
     def _get_energy(self, rec):
         energy = int(rec, base=16)
-        energy = self.ENERGY_BITS
-        energy = energy >> 1
+        energy = energy & self.ENERGY_BITS
+        energy = energy >> 4
 
         return energy
