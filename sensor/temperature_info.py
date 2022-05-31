@@ -9,4 +9,3 @@ class TemperatureData(HouseInfo):
 
     def get_data_by_area(self, field, rec_area=0):
         recs = super.get_data_by_area("temperature", rec_area)
-    
